@@ -1,0 +1,10 @@
+<div class="card ">
+    <img class="card-img-top w-100" src={{productObj.productImage}} alt="">
+    <div class="card-body">
+        <h4 class="card-title">{{productObj.productTitle}}</h4>
+        <p>{{productObj.description}}</p>
+        <button class="btn btn-primary" (click)="sendDataToParent(productObj.productTitle)">Add to cart</button>
+
+    </div>
+
+</div>
