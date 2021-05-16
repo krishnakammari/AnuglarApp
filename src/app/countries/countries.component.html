@@ -1,0 +1,42 @@
+<table class=" table text-light mt-3 ">
+    <thead class="text-warning font-weight-bold">
+        <tr>
+            <td >
+                Country Name
+            </td>
+            <td>
+                Capital city
+            </td>
+            <td>
+                population
+            </td>
+            <td>
+                region
+            </td>
+            <td>
+                flag
+            </td>
+
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let dataObj of myPost">
+            <td>
+                {{dataObj.name}}
+            </td>
+            <td>
+                {{dataObj.capital}}
+            </td>
+            <td>
+                {{dataObj.population}}
+            </td>
+            <td>
+                {{dataObj.region}}
+            </td>
+            <td >
+                <img style="width: 100px;" src="{{dataObj.flag}}" alt="">
+                
+            </td>
+        </tr>
+    </tbody>
+</table>

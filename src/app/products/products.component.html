@@ -1,11 +1,22 @@
-<div *ngIf="counter>=1" class="border border-primary scrollexample" style="height: 100px; overflow: scroll;">
-    <h4 class="text-center">Items Added-{{counter}}</h4>
-    <span *ngFor="let i of list">{{i}} </span>
-</div>
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 mt-5 mb-5">
-    <div class="col p-4 mt-4 mb-4" *ngFor="let pro of products">
-        <app-prod-card [productObj]=pro (myEvent)="getDataFromChild($event)">
 
-        </app-prod-card>
-    </div>
+<div class="mt-2 ">
+    <ul class="nav nav-pills productsheader">
+        <li class="nav-item">
+          <button type="button" class=" btn btn-success shadow-none" routerLink="mobile" routerLinkActive="active">Mobiles</button>
+        </li>
+        <li class="nav-item">
+            <button type="button" class=" btn btn-success shadow-none" routerLink="laptop" routerLinkActive="active">Laptops</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class=" btn btn-success shadow-none" routerLink="electronic" routerLinkActive="active">Electronics</button>
+          </li>
+      </ul>
 </div>
+<hr>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+
+

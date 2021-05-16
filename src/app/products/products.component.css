@@ -1,4 +1,16 @@
 
-.scrollexample::-webkit-scrollbar{
-    display: none;
+
+.productsheader{
+    
+    display: flex;
+    justify-content: space-evenly;
+
 }
+.btn:active,.btn:focus,.btn.active {
+   background-color:rebeccapurple;
+ }
+ hr{
+     
+     height: 2px;
+     background-color:whitesmoke;
+ }

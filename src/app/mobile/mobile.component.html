@@ -1,0 +1,14 @@
+<div>
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 mt-5 mb-5">
+        <div class="col p-4 mt-4 mb-4" *ngFor="let pro of products">
+            <app-prod-card [productObj]=pro (myEvent)="getDataFromChild($event)">
+    
+            </app-prod-card>
+        </div>
+    </div>
+    <div *ngIf="counter>=1" class="border border-primary scrollexample" style="height: 100px; overflow: scroll;">
+        <h4 class="text-center">Items Added-{{counter}}</h4>
+        <span *ngFor="let i of list">{{i}} </span>
+    </div>
+</div>
