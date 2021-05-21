@@ -5,11 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  constructor() { }
+  
+  f:Array<File> =[];
 
-  ngOnInit(): void {
+  handleFileInput(files: FileList) {
+    let i=0;
+    while(files.item(i))
+    {
+      this.f.push(files.item(i));
+      i=i+1;
+    }
+    console.log(this.f);
+    
   }
-
 }

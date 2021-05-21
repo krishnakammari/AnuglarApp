@@ -1,7 +1,7 @@
 <div>
     
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5 mt-5 mb-5">
-        <div class="col p-4 mt-4 mb-4" *ngFor="let pro of products">
+        <div class="col p-4 mt-4 mb-4" *ngFor="let pro of mobiles">
             <app-prod-card [productObj]=pro (myEvent)="getDataFromChild($event)">
     
             </app-prod-card>
